@@ -1,4 +1,6 @@
-
+body {
+	background-color: #F2F2F2;
+}
 
 h3, input[type="number"], select, option {
 	margin-left: 30px;
@@ -8,9 +10,16 @@ h3 {
 	color: #313131;
 }
 
+.common-dropdown,
+.common-input {
+	font-size: 25px;
+	padding: 10px;
+}
+
 .top-header-wrap {
-	border-bottom: 1px solid #C3C3C3;
+	border-bottom: 1px solid #D0D1D5;
 	padding: 50px 0 50px 0;
+	background-color: #FFFFFF;
 }
 
 .top-header-wrap .logo {
@@ -25,15 +34,20 @@ h3 {
 }
 
 .main-wrap {
-	border: 0px solid #C3C3C3;
-	width: 90%;
-	margin: 0 auto;
+	border: 1px solid #D0D1D5;
+	width: 70%;
+	margin: 30px auto;
 	text-align: center;
+	background-color: #FFFFFF;
+	
+	-webkit-border-radius: 10px;
+	   -moz-border-radius: 10px;
+		    border-radius: 10px;
 }
 
 .left-container {
 	border: 0px solid black;
-	width: 60%;
+	width: 80%;
 	display: inline-block;
 	text-align: left;
 	padding: 30px 0 30px 0;
@@ -57,11 +71,11 @@ h3 {
 	border-right: 2px solid #D9D9D9;
 	border-bottom: 2px solid #D9D9D9;
 	display: inline-block;
-	font-size: 17px;
+	font-size: 25px;
 	font-weight: bold;
 	padding: 40px 18px 40px 18px;
 	width: 70px;
-	margin: 30px;
+	margin: 30px 30px 10px 30px;
 	text-align: center;
 	color: #626262;
 	background-color: #E4E9EB;
@@ -71,7 +85,7 @@ h3 {
 	        border-radius: 10%;
 }
 
-.left-container .common-container .common-box:hover {
+.left-container .common-container .common-box:hover, .left-container .common-container .common-box:active {
 	background-color: #86C3D7;
 	color: #F2F2F2;
 	border: 2px solid #86C3D7;
@@ -100,6 +114,30 @@ h3 {
 	border: 0px solid #c3c3c3;
 	margin: 20px auto;
 	width: 20%; height: 30%;
-	font-size: 25px;
+	display: inline-block;
+}
+
+.left-container .chasing-collection-container .other-result-container .deliquency-container,
+.left-container .chasing-collection-container .other-result-container .employee-cost-container,
+.left-container .chasing-collection-container .other-result-container .employee-time-container  {
+	border: 0px solid black;
+	text-align: left;
+}
+
+.left-container .chasing-collection-container .other-result-container .deliquency-container .deliquency-result-container,
+.left-container .chasing-collection-container .other-result-container .deliquency-container .deliquency-dropdown,
+.left-container .chasing-collection-container .other-result-container .deliquency-container .deliquency-result-container h3, 
+.left-container .chasing-collection-container .other-result-container .deliquency-container .deliquency-result-container input,
+
+.left-container .chasing-collection-container .other-result-container .employee-cost-container .employee-cost-result-cotainer,
+.left-container .chasing-collection-container .other-result-container .employee-cost-container .employee-cost-dropdown,
+.left-container .chasing-collection-container .other-result-container .employee-cost-container .employee-cost-result-cotainer h3,
+.left-container .chasing-collection-container .other-result-container .employee-cost-container .employee-cost-result-cotainer input,
+
+.left-container .chasing-collection-container .other-result-container .employee-time-container .employee-time-result-container,
+.left-container .chasing-collection-container .other-result-container .employee-time-container .employee-time-dropdown,
+.left-container .chasing-collection-container .other-result-container .employee-time-container .employee-time-result-container h3,
+.left-container .chasing-collection-container .other-result-container .employee-time-container .employee-time-result-container input {
+	
 	display: inline-block;
 }
