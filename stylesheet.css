@@ -8,6 +8,7 @@ h3, input[type="number"], select, option {
 
 h3 {
 	color: #888888;
+	font-size: 23px;
 }
 
 .common-dropdown,
