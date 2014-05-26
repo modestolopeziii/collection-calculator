@@ -1,5 +1,5 @@
 body {
-	background-color: #F2F2F2;
+	background-color: /*#F2F2F2;*/
 }
 
 h3, input[type="number"], select, option {
@@ -14,6 +14,27 @@ h3 {
 .common-input {
 	font-size: 25px;
 	padding: 10px;
+	text-align: center;
+	border: 5px solid #C3C3C3;
+	outline: 0;
+	
+	-webkit-border-radius: 5px;
+	   -moz-border-radius: 5px;
+		    border-radius: 5px;
+			
+	-webkit-transition: border .5s;
+	   -moz-transition: border .5s;
+	        transition: border .5s;
+}
+
+.common-dropdown {
+	margin-left: 20px;
+}
+
+.common-input:focus,
+.common-dropdown:focus {
+	border: 5px solid #86C3D7;
+	background-color: #F2F2F2;
 }
 
 .top-header-wrap {
@@ -34,7 +55,7 @@ h3 {
 }
 
 .main-wrap {
-	border: 1px solid #D0D1D5;
+	border: 0px solid #D0D1D5;
 	width: 70%;
 	margin: 30px auto;
 	text-align: center;
@@ -60,14 +81,13 @@ h3 {
 }
 
 .left-container .common-container {
-	border-top: 2px solid #AAAAAB;
-	border-bottom: 2px solid #AAAAAB;
+	border-top: 1px solid #AAAAAB;
 	padding: 20px 0 20px 0;
 }
 
 .left-container .common-container .common-box {
-	border-top: 2px solid #6E8791;
-	border-left: 2px solid #6E8791;
+	border-top: 5px solid #6E8791;
+	border-left: 5px solid #6E8791;
 	border-right: 2px solid #D9D9D9;
 	border-bottom: 2px solid #D9D9D9;
 	display: inline-block;
@@ -78,7 +98,13 @@ h3 {
 	margin: 30px 30px 10px 30px;
 	text-align: center;
 	color: #626262;
-	background-color: #E4E9EB;
+	background-color: #F2F2F2;
+	background-color: -webkit-linear-gradient(top,#E4E9EB,f2f2f2);
+	background-color: linear-gradient(top,#E4E9EB,f2f2f2);
+	
+	-webkit-transition: background-color .3s;
+	   -moz-transition: background-color .3s;
+	        transition: background-color .3s;
 	
 	-webkit-border-radius: 10%;
 	   -moz-border-radius: 10%;
@@ -112,7 +138,7 @@ h3 {
 
 .left-container .chasing-collection-container .chasing-collection-dropdown {
 	border: 0px solid #c3c3c3;
-	margin: 20px auto;
+	margin: 0px auto;
 	width: 20%; height: 30%;
 	display: inline-block;
 }
@@ -122,6 +148,7 @@ h3 {
 .left-container .chasing-collection-container .other-result-container .employee-time-container  {
 	border: 0px solid black;
 	text-align: left;
+	margin-bottom: 20px;
 }
 
 .left-container .chasing-collection-container .other-result-container .deliquency-container .deliquency-result-container,
