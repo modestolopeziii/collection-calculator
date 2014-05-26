@@ -118,12 +118,16 @@ h3 {
 .left-container .common-container .common-box:hover, .left-container .common-container .common-box:active {
 	background-color: #86C3D7;
 	color: #F2F2F2;
-	border: 2px solid #86C3D7;
+	border-top: 2px solid #3A8AA4;
+	border-right: 2px solid #86C3D7;
+	border-left: 2px solid #3A8AA4;
+	border-bottom: 2px solid #86C3D7;
 	cursor: pointer;
 }
 
 .left-container .chasing-collection-container {
 	text-align: center;
+	background-color: ;
 }
 
 .left-container .chasing-collection-container h3 {
@@ -169,6 +173,9 @@ h3 {
 .left-container .chasing-collection-container .other-result-container .employee-time-container .employee-time-dropdown,
 .left-container .chasing-collection-container .other-result-container .employee-time-container .employee-time-result-container h3,
 .left-container .chasing-collection-container .other-result-container .employee-time-container .employee-time-result-container input {
-	
 	display: inline-block;
+}
+
+.main-wrap .plans-section {
+	
 }
