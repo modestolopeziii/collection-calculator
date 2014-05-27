@@ -88,7 +88,7 @@ h3 {
 
 .left-container .common-container {
 	border-top: 1px solid #AAAAAB;
-	padding: 30px 0 20px 0;
+	padding: 0px 0 20px 0;
 }
 
 .left-container .common-container .common-box {
@@ -99,7 +99,7 @@ h3 {
 	display: inline-block;
 	font-size: 18px;
 	font-weight: bold;
-	padding: 30px 15px 30px 15px;
+	padding: 25px 15px 25px 15px;
 	width: 70px;
 	margin: 20px 80px 0px 30px;
 	text-align: center;
