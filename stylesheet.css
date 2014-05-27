@@ -126,7 +126,7 @@ h3 {
 }
 
 .left-container .chasing-collection-container {
-	text-align: center;
+	
 }
 
 .left-container .chasing-collection-container h3 {
@@ -134,7 +134,7 @@ h3 {
 }
 
 .left-container .chasing-collection-container .chasing-collection-result {
-	margin-bottom: 20px;
+	margin: 0 0 20px 30px;
 	width: 30%; height: 30%;
 	border: 1px solid #c3c3c3;
 	padding: 30px;
