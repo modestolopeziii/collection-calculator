@@ -134,8 +134,8 @@ h3 {
 }
 
 .left-container .chasing-collection-container .chasing-collection-result {
-	margin: 20px auto;
-	width: 44%; height: 30%;
+	margin-bottom: 20px;
+	width: 30%; height: 30%;
 	border: 1px solid #c3c3c3;
 	padding: 30px;
 	font-size: 25px;
@@ -145,8 +145,7 @@ h3 {
 
 .left-container .chasing-collection-container .chasing-collection-dropdown {
 	border: 0px solid #c3c3c3;
-	margin: 0px auto;
-	width: 20%; height: 30%;
+	width: 25%; height: 30%;
 	display: inline-block;
 }
 
@@ -230,8 +229,9 @@ h3 {
 .save-label {
 	border: 0px solid black;
 	text-align: left;
-	width: 80%;
-	margin: 50px auto 10px auto;
+	width: 65%;
+	margin: 50px auto 25px auto;
+	font-size: 25px;
 }
 
 .to-label {
