@@ -127,7 +127,6 @@ h3 {
 
 .left-container .chasing-collection-container {
 	text-align: center;
-	background-color: ;
 }
 
 .left-container .chasing-collection-container h3 {
@@ -136,7 +135,7 @@ h3 {
 
 .left-container .chasing-collection-container .chasing-collection-result {
 	margin: 20px auto;
-	width: 30%; height: 30%;
+	width: 44%; height: 30%;
 	border: 1px solid #c3c3c3;
 	padding: 30px;
 	font-size: 25px;
@@ -176,6 +175,103 @@ h3 {
 	display: inline-block;
 }
 
-.main-wrap .plans-section {
-	
+.plans-section {
+	border: 0px solid black;
+	padding: 50px;
+	background-color: #86C3D7;
+	border-top: 5px solid #c3c3c3;
+	text-align: center;
 }
+
+.plans-section .plans-inner-container {
+	background-color: #FFFFFF;
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	border-radius: 10px;
+	padding: 50px;
+	width: 50%;
+	margin: 0 auto;
+	
+	
+	border-top: 8px solid #a3a3a3;
+	border-left: 8px solid #c3c3c3;
+	border-bottom: 8px solid #c3c3c3;
+	border-right: 8px solid #a3a3a3;
+}
+
+.plans-section .plans-inner-container .plans-intro h1 {
+	font-size: 40px;
+}
+
+.plans-section .plans-inner-container .plans-intro {
+	border-bottom: 1px solid #C3C3C3;
+}
+
+.plans-section .plans-inner-container .plan-1-container,
+.plans-section .plans-inner-container .plan-2-container,
+.to-label {
+	border: 0px solid black;
+	display: inline-block;
+}
+
+.plans-section .plans-inner-container .plan-1-container .dollar-label,
+.plans-section .plans-inner-container .plan-2-container .dollar-label {
+	display: inline-block;
+	font-size: 40px;
+	margin-right: 5px;
+}
+
+.to-label,
+.per-month-label {
+	margin: 30px 30px 0 30px;
+	color: #4D4D4D;
+}
+
+.save-label {
+	border: 0px solid black;
+	text-align: left;
+	width: 80%;
+	margin: 50px auto 10px auto;
+}
+
+.to-label {
+	font-size: 20px;
+}
+
+.plan-margin {
+	border: 0px solid black;
+	width: 90%;
+	margin: 0 auto;
+}
+
+.per-month-label {
+	font-size: 40px;
+}
+
+.plans-section .plans-inner-container .plan-1-container .plan-1,
+.plans-section .plans-inner-container .plan-2-container .plan-2 {
+	width: 150px; height: 40px;
+	border: 3px solid #c3c3c3;
+	padding: 30px 10px 30px 10px;
+	text-align: center;
+	font-size: 40px;
+	display: inline-block;
+	margin-bottom: 30px;
+}
+
+
+.plans-section .plans-inner-container .click-here-button {
+	margin: 50px auto 0 auto;
+	border: 0px solid #000000;
+	text-align: center;
+	padding: 20px;
+	width: 300px;
+	font-size: 20px;
+	cursor: pointer;
+	background-color: #4EA6C2;
+	color: #ffffff;
+}
+
+.plans-section .plans-inner-container .click-here-button:hover {
+	background-color: #61AFC9;
+}	
