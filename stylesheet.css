@@ -11,6 +11,10 @@ h3 {
 	font-size: 23px;
 }
 
+.clear-right {
+	clear: right;
+}
+
 .common-dropdown,
 .common-input {
 	font-size: 25px;
@@ -56,9 +60,9 @@ h3 {
 }
 
 .main-wrap {
-	border: 0px solid #D0D1D5;
-	width: 100%;
-	margin-top: 30px;
+	border: 1px solid #D0D1D5;
+	width: 1200px;
+	margin: 30px auto 0 auto;
 	text-align: center;
 	background-color: #FFFFFF;
 	
@@ -103,7 +107,7 @@ h3 {
 	font-weight: bold;
 	padding: 25px 15px 25px 15px;
 	width: 70px;
-	margin: 20px 80px 0px 30px;
+	margin: 20px 0px 0px 30px;
 	text-align: center;
 	color: #626262;
 	background-color: #F2F2F2;
