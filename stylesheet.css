@@ -86,9 +86,10 @@ input[type="text"] {
 
 .right-container {
 	border: 0px solid red;
-	width: 45%;
+	width: 45%; height: 100%;
 	display: inline-block;
 	background-color: #F2F2F2;
+	padding-top: 25px;
 /*	top: -1250px;
 	position: relative;
 */
@@ -215,6 +216,11 @@ input[type="text"] {
 	border-right: 8px solid #a3a3a3;
 }
 
+.plans-section .right-bottom-space {
+	border: 0px solid black;
+	width: 100%;
+}
+
 .plans-section .plans-inner-container .plans-intro h1 {
 	font-size: 40px;
 }
@@ -247,17 +253,19 @@ input[type="text"] {
 	border: 0px solid black;
 	text-align: left;
 	margin: 50px auto 25px auto;
-	font-size: 25px;
+	font-size: 30px;
+	width: 90%;
 }
 
 .to-label {
 	font-size: 20px;
 }
 
-.plan-margin {
+.right-bottom-space .plan-margin h1 {
 	border: 0px solid black;
 	width: 90%;
 	margin: 0 auto;
+	color: #F2F2F2;
 }
 
 .per-month-label {
