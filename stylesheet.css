@@ -8,7 +8,11 @@ h3, input[type="number"], select, option {
 
 h3 {
 	color: #888888;
-	font-size: 23px;
+	font-size: 16px;
+}
+
+input[type="text"] {
+	width: 110px;
 }
 
 .clear-right {
@@ -72,7 +76,7 @@ h3 {
 }
 
 .left-container {
-	border: 0px solid black;
+	border: 0px solid blue;
 	width: 50%;
 	display: inline-block;
 	text-align: left;
@@ -80,11 +84,13 @@ h3 {
 }
 
 .right-container {
-	border: 0px solid black;
-	width: 45%; height: 200px;
+	border: 0px solid red;
+	width: 45%;
 	display: inline-block;
-	top: -1250px;
+	background-color: #F2F2F2;
+/*	top: -1250px;
 	position: relative;
+*/
 }
 
 .left-container .instruction-container h2 {
@@ -131,15 +137,21 @@ h3 {
 	cursor: pointer;
 }
 
-.left-container .chasing-collection-container {
-	
+
+
+
+
+
+
+.right-container .chasing-collection-container {
+	border: 0px solid black;
 }
 
-.left-container .chasing-collection-container h3 {
+.right-container .chasing-collection-container h3 {
 	text-align: left;
 }
 
-.left-container .chasing-collection-container .chasing-collection-result {
+.right-container .chasing-collection-container .chasing-collection-result {
 	margin: 0 0 20px 30px;
 	width: 30%; height: 30%;
 	border: 1px solid #c3c3c3;
@@ -149,42 +161,40 @@ h3 {
 	text-align: left;
 }
 
-.left-container .chasing-collection-container .chasing-collection-dropdown {
+.right-container .chasing-collection-container .chasing-collection-dropdown {
 	border: 0px solid #c3c3c3;
 	width: 25%; height: 30%;
 	display: inline-block;
 }
 
-.left-container .chasing-collection-container .other-result-container .deliquency-container,
-.left-container .chasing-collection-container .other-result-container .employee-cost-container,
-.left-container .chasing-collection-container .other-result-container .employee-time-container  {
+.right-container .chasing-collection-container .other-result-container .deliquency-container,
+.right-container .chasing-collection-container .other-result-container .employee-cost-container,
+.right-container .chasing-collection-container .other-result-container .employee-time-container  {
 	border: 0px solid black;
 	text-align: left;
 	margin-bottom: 20px;
 }
 
-.left-container .chasing-collection-container .other-result-container .deliquency-container .deliquency-result-container,
-.left-container .chasing-collection-container .other-result-container .deliquency-container .deliquency-dropdown,
-.left-container .chasing-collection-container .other-result-container .deliquency-container .deliquency-result-container h3, 
-.left-container .chasing-collection-container .other-result-container .deliquency-container .deliquency-result-container input,
+.right-container .chasing-collection-container .other-result-container .deliquency-container .deliquency-result-container,
+.right-container .chasing-collection-container .other-result-container .deliquency-container .deliquency-dropdown,
+.right-container .chasing-collection-container .other-result-container .deliquency-container .deliquency-result-container h3, 
+.right-container .chasing-collection-container .other-result-container .deliquency-container .deliquency-result-container input,
 
-.left-container .chasing-collection-container .other-result-container .employee-cost-container .employee-cost-result-cotainer,
-.left-container .chasing-collection-container .other-result-container .employee-cost-container .employee-cost-dropdown,
-.left-container .chasing-collection-container .other-result-container .employee-cost-container .employee-cost-result-cotainer h3,
-.left-container .chasing-collection-container .other-result-container .employee-cost-container .employee-cost-result-cotainer input,
+.right-container .chasing-collection-container .other-result-container .employee-cost-container .employee-cost-result-cotainer,
+.right-container .chasing-collection-container .other-result-container .employee-cost-container .employee-cost-dropdown,
+.right-container .chasing-collection-container .other-result-container .employee-cost-container .employee-cost-result-cotainer h3,
+.right-container .chasing-collection-container .other-result-container .employee-cost-container .employee-cost-result-cotainer input,
 
-.left-container .chasing-collection-container .other-result-container .employee-time-container .employee-time-result-container,
-.left-container .chasing-collection-container .other-result-container .employee-time-container .employee-time-dropdown,
-.left-container .chasing-collection-container .other-result-container .employee-time-container .employee-time-result-container h3,
-.left-container .chasing-collection-container .other-result-container .employee-time-container .employee-time-result-container input {
+.right-container .chasing-collection-container .other-result-container .employee-time-container .employee-time-result-container,
+.right-container .chasing-collection-container .other-result-container .employee-time-container .employee-time-dropdown,
+.right-container .chasing-collection-container .other-result-container .employee-time-container .employee-time-result-container h3,
+.right-container .chasing-collection-container .other-result-container .employee-time-container .employee-time-result-container input {
 	display: inline-block;
 }
 
 .plans-section {
-	border: 0px solid black;
 	background-color: #f2f2f2;
 	border-top: 5px solid #c3c3c3;
-	text-align: center;
 	padding: 50px 0 50px 0;
 	margin: 0 10px 0 50px;
 }
@@ -196,7 +206,6 @@ h3 {
 	border-radius: 10px;
 	padding: 10px 10px 40px 10px;
 	width: 90%;
-	margin: 0 auto;
 	
 	
 	border-top: 8px solid #a3a3a3;
@@ -256,11 +265,11 @@ h3 {
 
 .plans-section .plans-inner-container .plan-1-container .plan-1,
 .plans-section .plans-inner-container .plan-2-container .plan-2 {
-	width: 100px; height: 40px;
+	width: 80px; height: 30px;
 	border: 3px solid #c3c3c3;
 	padding: 30px 10px 30px 10px;
 	text-align: center;
-	font-size: 40px;
+	font-size: 35px;
 	display: inline-block;
 	margin-bottom: 30px;
 }
