@@ -327,4 +327,30 @@ input[type="text"] {
 
 .plans-section .plans-inner-container .click-here-button:hover {
 	background-color: #61AFC9;
-}	
+}
+
+
+
+@media screen and (max-width: 768px) {
+
+}
+	
+@media (max-width: 767px) {
+	
+} 
+	
+@media (min-width: 768px) and (max-width: 991px) {
+
+}
+	
+@media (min-width: 992px) and (max-width: 1199px) {
+	.top-header-wrap {
+		background-color: #57A084;
+	}
+	.left-container,
+	.right-container {
+		width: 60%;
+		margin: 0 auto;
+		float: none;
+	}
+}
