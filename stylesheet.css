@@ -62,7 +62,7 @@ input[type="text"] {
 .top-header-wrap {
 	border-bottom: 1px solid #D0D1D5;
 	padding: 50px 0 50px 0;
-	background-color: #f2f2f2;
+	background-color: #6E8791;/*#f2f2f2;*/
 	width: 100%;
 }
 
@@ -345,7 +345,7 @@ input[type="text"] {
 	
 @media (min-width: 992px) and (max-width: 1199px) {
 	.top-header-wrap {
-		background-color: #57A084;
+		background-color: #6E8791;
 	}
 	.left-container,
 	.right-container {
