@@ -65,7 +65,7 @@ input[type="text"] {
 }
 
 .main-wrap {
-	border: 1px solid #D0D1D5;
+	border: 0px solid #D0D1D5;
 	width: 1200px;
 	margin: 30px auto 0 auto;
 	text-align: center;
@@ -86,13 +86,20 @@ input[type="text"] {
 
 .right-container {
 	border: 0px solid red;
-	width: 45%; height: 100%;
+	width: 45%;
 	display: inline-block;
 	background-color: #F2F2F2;
 	padding-top: 25px;
+	
 /*	top: -1250px;
 	position: relative;
 */
+}
+
+.left-container,
+.right-container {
+	margin: 0;
+	float: left;
 }
 
 .left-container .instruction-container h2 {
