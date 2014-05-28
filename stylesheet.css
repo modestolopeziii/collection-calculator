@@ -36,6 +36,19 @@ input[type="text"] {
 	        transition: border .5s;
 }
 
+.common-result {
+	border: 0px solid black;
+	text-align: center;
+	width: 100%;
+}
+
+.common-label {
+	font-weight: bold;
+	font-size: 20px;
+	margin: 0 5px;
+	color: #888888;
+}
+
 .common-dropdown {
 	margin-left: 20px;
 }
@@ -99,7 +112,7 @@ input[type="text"] {
 }
 
 .wrap {
-	border: 1px solid black;
+	border: 0px solid black;
 	width: 90%;
 	margin: 0 auto;
 }
@@ -162,6 +175,7 @@ input[type="text"] {
 
 .right-container .chasing-collection-container {
 	border: 0px solid black;
+	text-align: center;
 }
 
 .right-container .chasing-collection-container h3 {

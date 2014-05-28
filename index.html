@@ -100,7 +100,7 @@
 		
 		<section class= "deliquency-rate-container common-container">
 			<h3>What is your deliquency rate?</h3>
-			<input type= "number" class= "common-input" /> <strong>%</strong>
+			<input type= "number" class= "common-input" /> <span class= "common-label">%</span>
 		</section>
 		
 		
@@ -241,9 +241,10 @@
 			<section class= "other-result-container">
 				<section class= "deliquency-container">
 					<section class= "deliquency-result-container">
-						<h3>Outstanding Collection&nbsp $</h3>&nbsp;&nbsp;<input type= "text" class= "deliquency-result common-input" disabled />
+						<h3>Outstanding Collection</h3>
 					</section>
-					<section class= "deliquency-dropdown">
+					<section class= "deliquency-dropdown common-result">
+						<span class= "common-label">$</span> <input type= "text" class= "deliquency-result common-input" disabled />
 						<select class= "common-dropdown">
 							<option> p/wk </option>
 							<option> p/mth </option>
@@ -254,10 +255,11 @@
 				
 				<section class= "employee-time-container">
 					<section class= "employee-time-result-container">
-						<h3>Time to Collect<h3><input type= "text" class= "employee-time-result common-input" disabled /> <strong>hours</strong>
+						<h3>Time to Collect<h3>
 					</section>
-					
-					<section class= "employee-time-dropdown">
+					<br />
+					<section class= "employee-time-dropdown common-result">
+						<input type= "text" class= "employee-time-result common-input" disabled /> <span class= "common-label">hr</span>
 						<select class= "common-dropdown">
 							<option> p/wk </option>
 							<option> p/mth </option>
@@ -287,7 +289,6 @@
 					</section>
 					
 					<div class= "to-label">To</div>
-					
 					<section class= "plan-2-container">
 						<div class= "dollar-label">$</div> <div class= "plan-2">100</div>
 					</section>
