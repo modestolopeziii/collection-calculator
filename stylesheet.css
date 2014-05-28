@@ -90,6 +90,8 @@ input[type="text"] {
 	display: inline-block;
 	background-color: #F2F2F2;
 	padding-top: 25px;
+	top: 145px; left: 20px;
+	position: relative;
 	
 /*	top: -1250px;
 	position: relative;
