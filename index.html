@@ -59,7 +59,7 @@
 		
 		
 		<section class= "average-cost-container common-container">
-			<h3>Average cost per unit per month?</h3>
+			<h3>Average rent per unit, per month?</h3>
 			<section class= "common-box">
 			$50
 			</section>
@@ -136,9 +136,9 @@
 		<section class= "time-spend-container common-container">
 			<h3>How much time do they spend chasing collections?</h3>
 			<section>
-				<select class= "common-dropdown">
+				<select class= "spend-dropdown common-dropdown">
 					<option> --Select-- </option>
-					<option> Week </option>
+					<option> Day </option>
 					<option> Month </option>
 				</select>
 			</section>
@@ -220,22 +220,22 @@
 	
 	
 	
-	<section class= "right-container">
-	
-	
-			
+	<section class= "right-container">		
 		<section class= "chasing-collection-container common-container">
-		<h3>Chasing Collections is costing you....</h3>
-			<section class= "chasing-collection-result">
-			$
-			</section>
-			
-			<section class= "chasing-collection-dropdown">
-				<select class= "common-dropdown">
-					<option> p/wk </option>
-					<option> p/mth </option>
-					<option> p/yr </option>
-				</select>
+			<section class= "deliquency-container">
+				<section class= "deliquency-result-container">
+					<h3>Chasing Collections is costing you....</h3>
+				</section>
+				<br />
+				<section class= "deliquency-dropdown common-result"> 
+				<span class= "common-label float-left">$</span> 
+					<input type= "text" class= "deliquency-result common-input" disabled />
+					<select class= "common-dropdown float-right">
+						<option> p/week </option>
+						<option> p/month </option>
+						<option> p/year </option>
+					</select>
+				</section>
 			</section>
 			
 			<section class= "other-result-container">
@@ -243,12 +243,14 @@
 					<section class= "deliquency-result-container">
 						<h3>Outstanding Collection</h3>
 					</section>
-					<section class= "deliquency-dropdown common-result">
-						<span class= "common-label">$</span> <input type= "text" class= "deliquency-result common-input" disabled />
-						<select class= "common-dropdown">
-							<option> p/wk </option>
-							<option> p/mth </option>
-							<option> p/yr </option>
+					<br />
+					<section class= "deliquency-dropdown common-result"> 
+					<span class= "common-label">$</span> 
+						<input type= "text" class= "deliquency-result common-input" value= 10000 disabled />
+						<select class= "common-dropdown float-right">
+							<option> p/week </option>
+							<option> p/month </option>
+							<option> p/year </option>
 						</select>
 					</section>
 				</section>
@@ -259,11 +261,12 @@
 					</section>
 					<br />
 					<section class= "employee-time-dropdown common-result">
-						<input type= "text" class= "employee-time-result common-input" disabled /> <span class= "common-label">hr</span>
-						<select class= "common-dropdown">
-							<option> p/wk </option>
-							<option> p/mth </option>
-							<option> p/yr </option>
+					<input type= "text" class= "employee-time-result common-input" value= 20000 disabled />
+						<span class= "common-label">hours</span>
+						<select class= "common-dropdown float-right">
+							<option> p/week </option>
+							<option> p/month </option>
+							<option> p/year </option>
 						</select>
 					</section>
 				</section>
