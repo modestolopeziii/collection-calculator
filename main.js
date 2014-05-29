@@ -31,15 +31,15 @@ function UnitForm($scope) {
 		s.active = !s.active;
 	}
 	
-	$scope.rentTotal = function() {
-		var rentTotal = 0;
+	$scope.totalUnit = function() {
+		var totalUnit = 0;
 		angular.forEach($scope.units, function(s) {
 			if(s.active) {
-				rentTotal += s.number;
+				totalUnit += s.number;
 			}
 		});
-		return rentTotal;
-	}
+		return totalUnit;
+	};
 }
 
 function RentForm($scope) {
@@ -70,6 +70,20 @@ function RentForm($scope) {
 			active: true
 		}
 	];
+	
+	$scope.toggleActive = function(s) {
+		s.active = !s.active;
+	}
+	
+	$scope.totalRent = function() {
+		var totalRent = 0;
+		angular.forEach($scope.rents, function(s) {
+			if(s.active) {
+				totalRent += s.number;
+			}
+		});
+		return totalRent;
+	};
 }
 
 function EmployeeForm($scope) {
@@ -91,6 +105,20 @@ function EmployeeForm($scope) {
 			active: true
 		}
 	];
+	
+	$scope.toggleActive = function(s) {
+		s.active = !s.active;
+	}
+	
+	$scope.totalEmployee = function() {
+		var totalEmployee = 0;
+		angular.forEach($scope.employees, function(s) {
+			if(s.active) {
+				totalEmployee += s.number;
+			}
+		});
+		return totalEmployee;
+	};
 }
 
 function TimeSpendForm($scope) {
@@ -121,6 +149,20 @@ function TimeSpendForm($scope) {
 			active: true
 		}
 	];
+
+	$scope.toggleActive = function(s) {
+		s.active = !s.active;
+	}
+	
+	$scope.totalTime = function() {
+		var totalTime = 0;
+		angular.forEach($scope.timeSpends, function(s) {
+			if(s.active) {
+				totalTime += s.number;
+			}
+		});
+		return totalTime;
+	};
 }
 
 function HourRateForm($scope) {
@@ -151,4 +193,18 @@ function HourRateForm($scope) {
 			active: true
 		}
 	];
+
+	$scope.toggleActive = function(s) {
+		s.active = !s.active;
+	}
+	
+	$scope.totalHour = function() {
+		var totalHour = 0;
+		angular.forEach($scope.hourRates, function(s) {
+			if(s.active) {
+				totalHour += s.number;
+			}
+		});
+		return totalHour;
+	};
 }

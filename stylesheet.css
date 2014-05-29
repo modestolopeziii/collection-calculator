@@ -178,10 +178,7 @@ input[type="text"] {
 }
 
 .left-container .common-container .common-box:hover {
-	border-top: 2px solid #6E8791;
-	border-left: 2px solid #6E8791;
-	border-right: 2px solid #f2f2f2;
-	border-bottom: 2px solid #f2f2f2;
+
 	cursor: pointer;
 }
 

@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html><head>
+<html ng-app><head>
 	<link rel= "stylesheet" href= "stylesheet.css" />
 	<link rel= "stylesheet" href= "normalize.css" />
 	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.0.7/angular.min.js"></script>
@@ -9,7 +9,7 @@
 	<figure class= "logo"> Collection Calculator </figure>
 </header>
 
-<div class= "wrap" ng-app>
+<div class= "wrap">
 <section class= "main-wrap">
 	
 	
@@ -27,7 +27,7 @@
 			<section class= "common-box" ng-repeat= "unit in units" ng-click=  "toggleActive(unit)" ng-class= "{active:unit.active}">
 				{{unit.number}}
 			</section>
-			{{rentTotal()}}
+			{{totalUnit()}}
 		</section>
 	</form>
 
@@ -39,7 +39,7 @@
 			<section class= "common-box" ng-repeat= "rent in rents" ng-click=  "toggleActive(rent)" ng-class= "{active:rent.active}">
 				{{rent.number}}
 			</section>
-			
+			{{totalRent()}}
 		</section>
 	</form>	
 
@@ -53,9 +53,10 @@
 	<form ng-controller= "EmployeeForm">
 		<section class= "outstanding-money-container common-container">
 			<h3>How many employees chase outstanding money?</h3>
-			<section class= "common-box" ng-repeat= "employee in employees" ng-click=  "toggleActive(service)" ng-class= "{active:service.active}">
+			<section class= "common-box" ng-repeat= "employee in employees" ng-click=  "toggleActive(employee)" ng-class= "{active:employee.active}">
 				{{employee.number}}
 			</section>
+			{{totalEmployee()}}
 		</section>
 	</form>
 		
@@ -74,9 +75,10 @@
 				</select>
 			</section>
 			
-			<section class= "common-box" ng-repeat= "timeSpend in timeSpends" ng-click=  "toggleActive(service)" ng-class= "{active:service.active}">
+			<section class= "common-box" ng-repeat= "timeSpend in timeSpends" ng-click=  "toggleActive(timeSpend)" ng-class= "{active:timeSpend.active}">
 			{{timeSpend.number}}
 			</section>
+			{{totalTime()}}
 		</section>
 	</form>
 		
@@ -87,9 +89,10 @@
 		<section class= "hourly-rate-container common-container">
 			<h3>Hourly rate per employees?</h3>
 			
-			<section class= "common-box" ng-repeat= "hourRate in hourRates" ng-click=  "toggleActive(service)" ng-class= "{active:service.active}">
+			<section class= "common-box" ng-repeat= "hourRate in hourRates" ng-click=  "toggleActive(hourRate)" ng-class= "{active:hourRate.active}">
 			{{hourRate.number}}
 			</section>
+			{{totalHour()}}
 		</section>
 	</form>
 	</section>
