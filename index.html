@@ -2,13 +2,14 @@
 <html><head>
 	<link rel= "stylesheet" href= "stylesheet.css" />
 	<link rel= "stylesheet" href= "normalize.css" />
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.0.7/angular.min.js"></script>
 </head><body>
 
 <header class= "top-header-wrap">
 	<figure class= "logo"> Collection Calculator </figure>
 </header>
 
-<div class= "wrap">
+<div class= "wrap" ng-app>
 <section class= "main-wrap">
 	
 	
@@ -17,122 +18,52 @@
 	<section class= "instruction-container">
 		<h2>How much could you save?</h2>
 	</section>
-	
+
+
+	<form ng-controller= "UnitForm">
 		<section class= "unit-facility-container common-container">
 		<h3>How many units do you own <em>(per facility)</em>?</h3>
-			<section class= "common-box">
-			100
+		
+			<section class= "common-box" ng-repeat= "unit in units" ng-click=  "toggleActive(unit)" ng-class= "{active:unit.active}">
+				{{unit.number}}
 			</section>
-			
-			<section class= "common-box">
-			200
-			</section>
-			
-			<section class= "common-box">
-			500
-			</section>
-			
-			<section class= "common-box">
-			750
-			</section> <br />
-			
-			
-			<section class= "common-box">
-			1,000
-			</section>
-			
-			<section class= "common-box">
-			2,000
-			</section>
-			
-			<section class= "common-box">
-			3,000
-			</section>
-			
-			<section class= "common-box">
-			5,000
-			</section>
+			{{rentTotal()}}
 		</section>
-		
-		
-		
-		
-		
+	</form>
+
+
+	<form ng-controller= "RentForm">
 		<section class= "average-cost-container common-container">
 			<h3>Average rent per unit, per month?</h3>
-			<section class= "common-box">
-			$50
+			
+			<section class= "common-box" ng-repeat= "rent in rents" ng-click=  "toggleActive(rent)" ng-class= "{active:rent.active}">
+				{{rent.number}}
 			</section>
 			
-			<section class= "common-box">
-			$100
-			</section>
-			
-			<section class= "common-box">
-			$150
-			</section>
-			
-			<section class= "common-box">
-			$200
-			</section> <br />
-			
-			
-			<section class= "common-box">
-			$250
-			</section>
-			
-			<section class= "common-box">
-			$350
-			</section>
-			
-			<section class= "common-box">
-			$500
-			</section>
-			
-			<section class= "common-box">
-			$750
-			</section>
 		</section>
-		
-		
-		
-		
-		
+	</form>	
+
+	
 		<section class= "deliquency-rate-container common-container">
 			<h3>What is your deliquency rate?</h3>
 			<input type= "number" class= "common-input" /> <span class= "percentage-label">%</span>
 		</section>
-		
-		
-		
-		
-		
-		
+
+	
+	<form ng-controller= "EmployeeForm">
 		<section class= "outstanding-money-container common-container">
 			<h3>How many employees chase outstanding money?</h3>
-			<section class= "common-box">
-			1
-			</section>
-			
-			<section class= "common-box">
-			2
-			</section>
-			
-			<section class= "common-box">
-			3
-			</section>
-			
-			<section class= "common-box">
-			4
+			<section class= "common-box" ng-repeat= "employee in employees" ng-click=  "toggleActive(service)" ng-class= "{active:service.active}">
+				{{employee.number}}
 			</section>
 		</section>
+	</form>
 		
 		
 		
 		
 		
-		
-		
+	<form ng-controller= "TimeSpendForm">
 		<section class= "time-spend-container common-container">
 			<h3>How much time do they spend chasing collections?</h3>
 			<section>
@@ -142,79 +73,27 @@
 					<option> Month </option>
 				</select>
 			</section>
-			<section class= "common-box">
-			30min
-			</section>
 			
-			<section class= "common-box">
-			1hr
-			</section>
-			
-			<section class= "common-box">
-			2hr
-			</section>
-			
-			<section class= "common-box">
-			5hr
-			</section> <br />
-			
-			<section class= "common-box">
-			8hr
-			</section>
-			
-			<section class= "common-box">
-			10hr
-			</section>
-			
-			<section class= "common-box">
-			15hr
-			</section>
-			
-			<section class= "common-box">
-			20hr
+			<section class= "common-box" ng-repeat= "timeSpend in timeSpends" ng-click=  "toggleActive(service)" ng-class= "{active:service.active}">
+			{{timeSpend.number}}
 			</section>
 		</section>
+	</form>
 		
-		
-		
-		
+<!--
+	HOURLY RATE FORM
+-->
+	<form ng-controller= "HourRateForm">
 		<section class= "hourly-rate-container common-container">
 			<h3>Hourly rate per employees?</h3>
-			<section class= "common-box">
-			$8
-			</section>
 			
-			<section class= "common-box">
-			$10
+			<section class= "common-box" ng-repeat= "hourRate in hourRates" ng-click=  "toggleActive(service)" ng-class= "{active:service.active}">
+			{{hourRate.number}}
 			</section>
-			
-			<section class= "common-box">
-			$12
-			</section>
-			
-			<section class= "common-box">
-			$15
-			</section> <br />
-			
-			<section class= "common-box">
-			$20
-			</section>
-			
-			<section class= "common-box">
-			$22
-			</section>
-			
-			<section class= "common-box">
-			$25
-			</section>
-			
-			<section class= "common-box">
-			$30
-			</section>
-		</section>		
+		</section>
+	</form>
 	</section>
-	
-	
+
 	
 	
 	
@@ -228,18 +107,18 @@
 				</section>
 				<br />
 				<section class= "deliquency-dropdown common-result"> 
-				<span class= "common-label float-left">$</span> 
+				<span class= "common-label float-left">$ </span> 
 					<input type= "text" class= "deliquency-result common-input" disabled />
 					<select class= "common-dropdown float-right">
-						<option> p/week </option>
-						<option> p/month </option>
 						<option> p/year </option>
+						<option> p/month </option>
+						<option> p/week </option>
 					</select>
 				</section>
 			</section>
-			
-			<section class= "other-result-container">
-				<section class= "deliquency-container">
+
+			<section class= "other-result-container">		
+<!--			<section class= "deliquency-container">
 					<section class= "deliquency-result-container">
 						<h3>Outstanding Collection</h3>
 					</section>
@@ -254,7 +133,7 @@
 						</select>
 					</section>
 				</section>
-				
+-->				
 				<section class= "employee-time-container">
 					<section class= "employee-time-result-container">
 						<h3>Time to Collect<h3>
@@ -264,9 +143,9 @@
 					<input type= "text" class= "employee-time-result common-input" value= 20000 disabled />
 						<span class= "common-label">hours</span>
 						<select class= "common-dropdown float-right">
-							<option> p/week </option>
-							<option> p/month </option>
 							<option> p/year </option>
+							<option> p/month </option>
+							<option> p/week </option>
 						</select>
 					</section>
 				</section>
@@ -288,7 +167,7 @@
 					<h3 class= "save-label"> Save </h3>
 					
 					<section class= "plan-1-container">
-						<div class= "dollar-label">$</div> <div class= "plan-1">100</div>
+						<div class= "dollar-label">$ </div> <div class= "plan-1">100</div>
 					</section>
 					
 					<div class= "to-label">To</div>
@@ -316,5 +195,7 @@
 
 </section>
 </div>
+
+<script src= "main.js"></script>
 
 </body></html>
