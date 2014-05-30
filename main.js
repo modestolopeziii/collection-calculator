@@ -208,3 +208,16 @@ function HourRateForm($scope) {
 		return totalHour;
 	};
 }
+
+$("#totalUnit, #totalRent, #totalEmployee, #totalTime, #totalHour, #text-delinquency").bind('keyup keydown mouseup mousedown change', function(){
+	var a = $("#totalUnit").val();
+	var b = $("#totalRent").val();
+	var c = $("#totalEmployee").val();
+	var d = $("#totalTime").val();
+	var e = $("#totalHour").val();
+	var textDelinquency = $("#text-delinquency").val() * 12;
+	
+	var result = a*b*c*d*e*textDelinquency;
+	
+	$(".right-container .common-container .common-result #chasing-collection-total").val(result.toFixed(1))
+});

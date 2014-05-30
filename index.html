@@ -2,7 +2,7 @@
 <html ng-app><head>
 	<link rel= "stylesheet" href= "stylesheet.css" />
 	<link rel= "stylesheet" href= "normalize.css" />
-	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.0.7/angular.min.js"></script>
+	<script src= "https://code.jquery.com/jquery-2.1.1.min.js"></script>
 </head><body>
 
 <header class= "top-header-wrap">
@@ -27,7 +27,7 @@
 			<section class= "common-box" ng-repeat= "unit in units" ng-click=  "toggleActive(unit)" ng-class= "{active:unit.active}">
 				{{unit.number}}
 			</section>
-			{{totalUnit()}}
+			<input type="number" class= "common-total" id= "totalUnit" value= "{{totalUnit()}}" />
 		</section>
 	</form>
 
@@ -39,14 +39,14 @@
 			<section class= "common-box" ng-repeat= "rent in rents" ng-click=  "toggleActive(rent)" ng-class= "{active:rent.active}">
 				{{rent.number}}
 			</section>
-			{{totalRent()}}
+			<input type="number" id= "totalRent" class= "common-total" value= "{{totalRent()}}" />
 		</section>
 	</form>	
 
 	
 		<section class= "deliquency-rate-container common-container">
-			<h3>What is your deliquency rate?</h3>
-			<input type= "number" class= "common-input" /> <span class= "percentage-label">%</span>
+			<h3>What is your delinquency rate?</h3>
+			<input type= "number" class= "common-input" id= "text-delinquency" /> <span class= "percentage-label">%</span>
 		</section>
 
 	
@@ -56,7 +56,7 @@
 			<section class= "common-box" ng-repeat= "employee in employees" ng-click=  "toggleActive(employee)" ng-class= "{active:employee.active}">
 				{{employee.number}}
 			</section>
-			{{totalEmployee()}}
+			<input type="text" id= "totalEmployee" class= "common-total" value= "{{totalEmployee()}}" />
 		</section>
 	</form>
 		
@@ -78,7 +78,7 @@
 			<section class= "common-box" ng-repeat= "timeSpend in timeSpends" ng-click=  "toggleActive(timeSpend)" ng-class= "{active:timeSpend.active}">
 			{{timeSpend.number}}
 			</section>
-			{{totalTime()}}
+			<input type="text" id= "totalTime" class= "common-total" value= "{{totalTime()}}" />
 		</section>
 	</form>
 		
@@ -92,7 +92,7 @@
 			<section class= "common-box" ng-repeat= "hourRate in hourRates" ng-click=  "toggleActive(hourRate)" ng-class= "{active:hourRate.active}">
 			{{hourRate.number}}
 			</section>
-			{{totalHour()}}
+			<input type="text" id= "totalHour" class= "common-total" value= "{{totalHour()}}" />
 		</section>
 	</form>
 	</section>
@@ -111,7 +111,9 @@
 				<br />
 				<section class= "deliquency-dropdown common-result"> 
 				<span class= "common-label float-left">$ </span> 
-					<input type= "text" class= "deliquency-result common-input" disabled />
+			
+				<input type= "text" class= "deliquency-result common-input chasing-collection-total" id= "chasing-collection-total" disabled />
+					
 					<select class= "common-dropdown float-right">
 						<option> p/year </option>
 						<option> p/month </option>
@@ -200,5 +202,5 @@
 </div>
 
 <script src= "main.js"></script>
-
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.0.7/angular.min.js"></script>
 </body></html>

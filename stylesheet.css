@@ -20,6 +20,11 @@ input[type="text"] {
 	font-weight: bold;
 }
 
+#chasing-collection-total {
+	border: 0px solid black;
+	width: auto;
+}
+
 .percentage-label {
 	color: #888888;
 	font-size: 20px;
