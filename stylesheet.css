@@ -94,10 +94,9 @@ input[type="text"] {
 
 .top-header-wrap .logo {
 	border: 0px solid black;
-	width: 500px;
+	width: 90%;
 	font-size: 50px;
-	padding: 20px;
-	text-align: center;
+	padding: 20px 0 20px 0;
 	margin: 0px 0 0 150px;
 	color: #f2f2f2;
 }
